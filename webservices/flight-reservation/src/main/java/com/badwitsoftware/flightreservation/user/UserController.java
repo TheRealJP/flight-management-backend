@@ -2,6 +2,7 @@ package com.badwitsoftware.flightreservation.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +19,7 @@ public class UserController {
 	private static final String LOGIN_VIEW = "login/login";
 	private static final String REGISTRATION_VIEW = "login/registerUser";
 
-	@RequestMapping("/showRegister")
+	@GetMapping("/showRegister")
 	public String showRegistrationPage() {
 		return REGISTRATION_VIEW;
 	}
@@ -29,7 +30,7 @@ public class UserController {
 		return LOGIN_VIEW;
 	}
 
-	@RequestMapping("/showLogin")
+	@GetMapping("/showLogin")
 	public String showLoginPage() {
 		return LOGIN_VIEW;
 	}
