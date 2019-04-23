@@ -6,12 +6,14 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
 import org.springframework.security.core.GrantedAuthority;
 
 @Entity
-public class UserRole implements GrantedAuthority {
+public class Role implements GrantedAuthority {
 
 	private static final long serialVersionUID = 8460162922366487366L;
 
@@ -22,7 +24,10 @@ public class UserRole implements GrantedAuthority {
 
 	private String name;
 
-	@ManyToMany(mappedBy = "roles")
+	@ManyToMany
+	@JoinTable(name = "user_role", 
+	joinColumns = @JoinColumn(name = "user_id"),
+	inverseJoinColumns = @JoinColumn(name = "role_id)"))
 	private Set<User> users;
 
 	public Long getId() {
