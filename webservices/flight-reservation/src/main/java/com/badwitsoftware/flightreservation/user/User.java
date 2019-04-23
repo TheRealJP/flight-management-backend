@@ -7,8 +7,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
@@ -36,8 +34,7 @@ public final class User implements Serializable {
 	private String password;
 
 	@ManyToMany
-	@JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
-	private Set<UserRole> userRoles;
+	private Set<Role> roles;
 
 	public Long getId() {
 		return id;
@@ -79,11 +76,11 @@ public final class User implements Serializable {
 		this.password = password;
 	}
 
-	public Set<UserRole> getRoles() {
-		return userRoles;
+	public Set<Role> getRoles() {
+		return roles;
 	}
 
-	void setRoles(Set<UserRole> userRoles) {
-		this.userRoles = userRoles;
+	void setRoles(Set<Role> userRoles) {
+		this.roles = userRoles;
 	}
 }
