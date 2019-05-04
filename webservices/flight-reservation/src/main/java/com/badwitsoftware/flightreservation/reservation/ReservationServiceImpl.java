@@ -22,10 +22,11 @@ public class ReservationServiceImpl implements ReservationService {
 	private FlightService flightService;
 	private PdfGenerator pdfGenerator;
 	private EmailGenerator emailGenerator;
-	
+
 	@Autowired
-	public ReservationServiceImpl(ReservationRepository reservationRepository, FlightPassengerRepository flightPassengerRepository,
-			FlightService flightService, PdfGenerator pdfGenerator, EmailGenerator emailGenerator) {
+	public ReservationServiceImpl(ReservationRepository reservationRepository,
+			FlightPassengerRepository flightPassengerRepository, FlightService flightService, PdfGenerator pdfGenerator,
+			EmailGenerator emailGenerator) {
 		this.reservationRepository = reservationRepository;
 		this.flightPassengerRepository = flightPassengerRepository;
 		this.flightService = flightService;
@@ -43,7 +44,7 @@ public class ReservationServiceImpl implements ReservationService {
 		passenger.setEmail(request.getPassengerEmail());
 		passenger.setPhone(request.getPassengerPhone());
 		FlightPassenger savedPassenger = flightPassengerRepository.save(passenger);
-		
+
 		// generate then save the reservation
 		Long flightId = request.getFlightId();
 		Flight flight = flightService.findById(flightId);
@@ -67,9 +68,8 @@ public class ReservationServiceImpl implements ReservationService {
 		Optional<Reservation> reservation = reservationRepository.findById(id);
 		if (reservation.isPresent()) {
 			return reservation.get();
-		} else {
-			return null;
 		}
+		return null;
 	}
 
 	@Override
