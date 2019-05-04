@@ -41,10 +41,10 @@ public class UserController {
 
 		if (userService.login(email, password)) {
 			return "findFlights";
-		} else {
-			modelMap.addAttribute("loginMessage", "Invalid username or password. Please try again.");
-			return LOGIN_VIEW;
 		}
+		modelMap.addAttribute("loginMessage", "Invalid username or password. Please try again.");
+		return LOGIN_VIEW;
+
 	}
 
 }
