@@ -1,7 +1,7 @@
 package com.badwitsoftware.flightreservation.util;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,14 +23,18 @@ public class PdfGenerator {
 	public void generateIterary(Reservation reservation, String filePath) {
 		Document document = new Document();
 		try {
-			PdfWriter.getInstance(document, new FileOutputStream(filePath));
+			FileOutputStream outputStream = new FileOutputStream(filePath);
+			PdfWriter.getInstance(document, outputStream);
+			
 			document.open();
 			document.add(generateTable(reservation));
 			document.close();
+			outputStream.close();
 			log.info("Itinerary successfully generated for {}", reservation.getFlight().getOperatingAirlines());
-		} catch (FileNotFoundException | DocumentException e) {
+		} catch (DocumentException | IOException e) {
 			log.error(e.getMessage());
 		}
+
 	}
 
 	private PdfPTable generateTable(Reservation reservation) {
