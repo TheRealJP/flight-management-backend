@@ -18,9 +18,8 @@ public class DefaultFlightService implements FlightService {
 		Optional<Flight> flight = flightRepository.findById(id);
 		if (flight.isPresent()) {
 			return flight.get();
-		} else {
-			return null;
 		}
+		return null;
 	}
 
 	@Override
