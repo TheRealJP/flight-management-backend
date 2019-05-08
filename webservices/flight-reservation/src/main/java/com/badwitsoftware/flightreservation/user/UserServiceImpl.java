@@ -38,11 +38,11 @@ public class UserServiceImpl {
 		return authenticated;
 	}
 
-	User save(UserDto dto) {
-		User user = userRepository.findByEmail(dto.getEmail());
+	User save(UserRequest request) {
+		User user = userRepository.findByEmail(request.getEmail());
 		user.setPassword(passwordEncoder.encode(user.getPassword()));
-		user.setFirstName(dto.getFirstName());
-		user.setLastName(dto.getLastName());
+		user.setFirstName(request.getFirstName());
+		user.setLastName(request.getLastName());
 		return user;
 	}
 }

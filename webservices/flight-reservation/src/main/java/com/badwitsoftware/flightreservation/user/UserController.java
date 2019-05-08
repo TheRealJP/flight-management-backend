@@ -25,7 +25,7 @@ public class UserController {
 	}
 
 	@PostMapping("/register")
-	public String register(@ModelAttribute("user") UserDto user) {
+	public String register(@ModelAttribute("user") UserRequest user) {
 		userService.save(user);
 		return LOGIN_VIEW;
 	}
