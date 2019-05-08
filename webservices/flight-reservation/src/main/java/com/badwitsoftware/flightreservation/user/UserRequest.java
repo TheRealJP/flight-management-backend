@@ -1,6 +1,6 @@
 package com.badwitsoftware.flightreservation.user;
 
-public final class UserDto {
+public final class UserRequest {
 
 	private String firstName;
 	private String lastName;
