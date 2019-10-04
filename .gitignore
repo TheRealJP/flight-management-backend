@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/java,maven,gradle,eclipse,intellij,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=java,maven,gradle,eclipse,intellij,visualstudiocode
+# Created by https://www.gitignore.io/api/java,maven,gradle,kotlin,eclipse,intellij
+# Edit at https://www.gitignore.io/?templates=java,maven,gradle,kotlin,eclipse,intellij
 
 ### Eclipse ###
 .metadata
@@ -184,6 +184,19 @@ fabric.properties
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+### Kotlin ###
+# Compiled class file
+
+# Log file
+
+# BlueJ files
+
+# Mobile Tools for Java (J2ME)
+
+# Package Files #
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+
 ### Maven ###
 target/
 pom.xml.tag
@@ -196,17 +209,6 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 .flattened-pom.xml
-
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
 
 ### Gradle ###
 .gradle
@@ -227,4 +229,4 @@ gradle-app.setting
 ### Gradle Patch ###
 **/build/
 
-# End of https://www.gitignore.io/api/java,maven,gradle,eclipse,intellij,visualstudiocode
+# End of https://www.gitignore.io/api/java,maven,gradle,kotlin,eclipse,intellij
