@@ -9,6 +9,9 @@ matrix:
       sudo: required
       jdk: openjdk12
 
+before_install:
+ - chmod +x gradlew
+ 
 script: 
   - ./gradlew check --info --stacktrace --console=plain --build-cache -Dkotlin.colors.enabled=false
 
