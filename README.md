@@ -1,4 +1,7 @@
 # Flight Management Site
+
+[![Build Status](https://travis-ci.org/notjuanortiz/flight-management-backend.svg?branch=master)](https://travis-ci.org/notjuanortiz/flight-management-backend)
+
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a3cfc21c2a9547b792a92c72918843ee)](https://www.codacy.com/manual/notjuanortiz/flight-management-backend?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=notjuanortiz/flight-management-backend&amp;utm_campaign=Badge_Grade)
 
 This project was to created to showcase mastery of Java, and the the Spring Framework.
