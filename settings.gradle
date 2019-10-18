@@ -7,7 +7,8 @@
  * in the user manual at https://docs.gradle.org/5.5.1/userguide/multi_project_builds.html
  */
 
-rootProject.name = 'flight-management'
+rootProject.name = 'travelab'
 
-include('flight-reservation')
-include('flight-checkin')
+include('travelab-flight-reservation')
+include('travelab-flight-checkin')
+include('travelab-gateway')
