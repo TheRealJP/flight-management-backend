@@ -3,6 +3,8 @@ plugins {
     id 'checkstyle'
 }
 
+mainClassName = 'com.travelab.gateway.ServiceGatewayApplication'
+
 repositories {
     mavenCentral()
 }
