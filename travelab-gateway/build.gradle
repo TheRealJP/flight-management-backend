@@ -2,6 +2,10 @@ plugins {
     id 'application'
 }
 
+group = 'com.travelab'
+version = '0.0.1-SNAPSHOT'
+description = 'travelab-gateway'
+
 mainClassName = 'com.travelab.gateway.ServiceGatewayApplication'
 
 repositories {
