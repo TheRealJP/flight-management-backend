@@ -2,9 +2,7 @@ plugins {
     id 'application'
 }
 
-group = 'com.travelab'
-version = '0.0.1-SNAPSHOT'
-description = 'travelab-gateway'
+description = 'The gateway service for Travelab.'
 
 mainClassName = 'com.travelab.gateway.ServiceGatewayApplication'
 
