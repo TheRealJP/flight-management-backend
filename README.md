@@ -39,10 +39,10 @@ A lot of research was done for the lifespan of the project. The topics covered s
 | Topic	| 	|   |   |   |
 |:-:	|---|---|---|---|
 | Efficient dependency management   |   |   |   |   |
-| Behavior-driven development (BDD) |   |   |   |   |
+| Behavior-driven development (BDD)	|   |   |   |   |
 | API Documentation 				|   |   |   |   |
-| Database role management (MySQL) 	|	|	|	|	|
-| Resilience design patterns 		|	|	|	|	|
+| Database role management (MySQL)	|	|	|	|	|
+| Resilience design patterns		|	|	|	|	|
 
 ## Authors
 
