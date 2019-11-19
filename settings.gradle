@@ -9,6 +9,6 @@
 
 rootProject.name = 'travelab'
 
-include('travelab-flight-reservation')
-include('travelab-flight-checkin')
+include('travelab-customer-flight-reservation')
+include('travelab-customer-flight-checkin')
 include('travelab-gateway')
