@@ -4,9 +4,6 @@ matrix:
   include:
     - os: linux
       sudo: required
-      jdk: oraclejdk12
-    - os: linux
-      sudo: required
       jdk: openjdk12
  
 script: 
