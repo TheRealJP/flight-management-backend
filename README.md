@@ -10,17 +10,17 @@ Travelab is a traveling platform built with a microservices architecture to emph
 
 ### Customer
 
-- [*]  `travelab-customer-flight-checkin` view/add their check-in status including number of bags being checked in
-- [*]  `travelab-customer-flight-reservation` add/update/delete existing flight reservations
+- [*]  `travelab-customer-flight-checkin` view, add their check-in status including number of bags being checked in
+- [*]  `travelab-customer-flight-reservation` add, update, or delete existing flight reservations
 - [ ]  `travelab-customer-cart` shopping cart functionality, including checkout.
 - [ ]  `travelab-customer-payment` payment integration, view payment history.
  
 ### Vendors
-- [ ]  `travelab-vendor-flight-management` add/update/delete available flights
-- [ ]  `travelab-vendor-discounts` create/read/update/delete discounts for available flights
+- [ ]  `travelab-vendor-flight-management` add, update, or delete available flights
+- [ ]  `travelab-vendor-discounts` create, read, update, delete discounts for available flights
 
 ### Both
-- [ ]  `travelab-authorization` intercepts and processes each customer/vendor request   
+- [ ]  `travelab-authorization` intercepts and processes each customer and vendor request   
 - [ ]  `travelab-authentication` - user account authentication for both customers and vendors.
 - [ ]  `travelab-flight-search` - search available flights
 
@@ -36,13 +36,13 @@ Travelab is a traveling platform built with a microservices architecture to emph
 
 A lot of research was done for the lifespan of the project. The topics covered specifically are as follows:
 
-| Topic	| 	|   |   |   |
+|Topic	| 	|   |   |   |
 |:-:	|---|---|---|---|
-| Efficient dependency management   |   |   |   |   |
-| Behavior-driven development (BDD)	|   |   |   |   |
-| API Documentation 				|   |   |   |   |
-| Database role management (MySQL)	|	|	|	|	|
-| Resilience design patterns		|	|	|	|	|
+|Efficient dependency management	|   |   |   |   |
+|Behavior-driven development		|   |   |   |   |
+|API Documentation 					|   |   |   |   |
+|Database role management			|	|	|	|	|
+|Resilience design patterns			|	|	|	|	|
 
 ## Authors
 
