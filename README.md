@@ -2,29 +2,29 @@
 [![Build Status](https://travis-ci.org/notjuanortiz/travelab.svg?branch=master)](https://travis-ci.org/notjuanortiz/travelab)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b7866157e30248428541817fee0f7868)](https://www.codacy.com/manual/notjuanortiz/travelab?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=notjuanortiz/travelab&amp;utm_campaign=Badge_Grade)
 
-
-# Purpose 
+## Purpose 
 This project was to created to showcase mastery of Java, and the the Spring Framework.
 Travelab is a traveling platform built with a microservices architecture to emphasis horizontal scalability and resilience.
 
+## Modules
 
-# Modules
+### Customer
 
-## Customer
-
-- [*] `travelab-customer-flight-checkin` - view/add their check-in status including number of bags being checked in
-- [*] `travelab-customer-flight-reservation` - add/update/delete flight reservations
+- [*]  `travelab-customer-flight-checkin` view their current flight status including the number of bags being checked in
+- [*]  `travelab-customer-flight-reservation` add, update, or delete existing flight reservations
+- [ ]  `travelab-customer-cart` shopping cart functionality, including checkout.
+- [ ]  `travelab-customer-payment` payment integration, view payment history.
  
-## Vendors
- - [ ] `travelab-vendor-authentication`
- - [ ] `travelab-vendor-flight-management` add/update/delete available flights
+### Vendors
+- [ ]  `travelab-vendor-flight-management` add, update, or delete available flights
+- [ ]  `travelab-vendor-discounts` create, read, update, delete discounts for available flights
 
-## Both
+### Both
+- [ ]  `travelab-authorization`  intercepts and processes each customer and vendor request   
+- [ ]  `travelab-authentication`  user account authentication for both customers and vendors.
+- [ ]  `travelab-flight-search`  search available flights
 
-- [ ] `travelab-authentication` - User account authentication for both customers and vendors.
-- [ ] `travelab-flight-search` - view available flights
-
-# Built With
+## Built With
 
 * [Spring Framework](https://spring.io/projects) - The web framework used
 * [Gradle](https://gradle.org/) - Dependency and Build Management
@@ -32,19 +32,19 @@ Travelab is a traveling platform built with a microservices architecture to emph
 * [Swagger](https://swagger.io/) - API Documentation
 * [JUnit](https://junit.org) - Testing framework
 
-# Lessons Learned
+## Lessons Learned
 
 A lot of research was done for the lifespan of the project. The topics covered specifically are as follows:
 
-| Topic  |  |   |   |   |
-|:-:|---|---|---|---|
-| Efficient dependency management   |   |   |   |   |
-|Behavior-driven development (BDD)   |   |   |   |   |
-|  API Documentation |   |   |   |   |
-| Database role management (MySQL) |	|	|	|
-| Resilience design patterns |	|	|	|	|
+|Topic	| 	|   |   |   |
+|:-:	|---|---|---|---|
+|Efficient dependency management|   |   |   |   |
+|Behavior-driven development	|   |   |   |   |
+|API Documentation			|   |   |   |   |
+|Database role management	|	|	|	|	|
+|Resilience design patterns	|	|	|	|	|
 
-# Authors
+## Authors
 
 * **Juan Ortiz** - *Initial work* - [NotJuanOrtiz](https://github.com/notjuanortiz)
 
