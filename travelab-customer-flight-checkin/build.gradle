@@ -12,7 +12,7 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web:2.2.0.RELEASE'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.2.0.RELEASE'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.2.1.RELEASE'
     implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:9.0.29'
     implementation 'jstl:jstl:1.2'
 }
